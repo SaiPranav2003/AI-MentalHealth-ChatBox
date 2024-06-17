@@ -1,0 +1,236 @@
+/* Reset and Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1E1E1E; /* Dark background color */
+    color: #FFFFFF; /* Light text color */
+}
+
+/* Container and Layout */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat-window {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2E2E2E; /* Dark background for chat window */
+    border-right: 1px solid #444444;
+    height: 100%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #3A3A3A;
+    color: white;
+    padding: 10px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Chat Box and Messages */
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #444444;
+    background-color: #2E2E2E; /* Dark background for messages area */
+    color: #FFFFFF; /* Light text color for messages */
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #3A3A3A;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #444444;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #1E1E1E; /* Dark background for input field */
+    color: #FFFFFF; /* Light text color for input */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45A049;
+}
+
+/* Info Message */
+.info-message {
+    font-size: 12px;
+    color: #666666;
+    margin: 5px 10px;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    display: none;
+    font-size: 12px;
+    color: #888;
+    margin: 5px 10px;
+}
+
+/* History */
+.history {
+    width: 30%;
+    background-color: #2E2E2E; /* Dark background for history column */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.history h2 {
+    text-align: center;
+    background-color: #3A3A3A;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #444444;
+    color: #FFFFFF; /* Light text color for history heading */
+}
+
+.history-messages {
+    flex-grow: 1;
+    padding: 10px;
+    color: #FFFFFF; /* Light text color for history messages */
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* Clear History Button */
+#clear-history-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clear-history-button:hover {
+    background-color: #FF4500;
+}
+
+/* Theme Toggle Button */
+#theme-toggle-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle-button:hover {
+    background-color: #4169E1;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #FFFFFF; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+body.light-mode .container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .chat-window {
+    background-color: #F0F0F0; /* Light background for chat window */
+    border-right: 1px solid #CCCCCC;
+}
+
+body.light-mode .header {
+    background-color: #E0E0E0;
+    color: #000000;
+}
+
+body.light-mode .messages {
+    background-color: #F0F0F0; /* Light background for messages area */
+    color: #000000; /* Dark text color for messages */
+}
+
+body.light-mode .input-area {
+    background-color: #E0E0E0;
+}
+
+body.light-mode input[type="text"] {
+    background-color: #FFFFFF; /* Light background for input field */
+    color: #000000; /* Dark text color for input */
+}
+
+body.light-mode .info-message {
+    color: #444444;
+}
+
+body.light-mode .history {
+    background-color: #F0F0F0; /* Light background for history column */
+}
+
+body.light-mode .history h2 {
+    background-color: #E0E0E0;
+    color: #000000; /* Dark text color for history heading */
+}
+
+body.light-mode .history-messages {
+    color: #000000; /* Dark text color for history messages */
+}
+
+body.light-mode #clear-history-button {
+    background-color: #FF6347;
+    color: white;
+}
+
+body.light-mode #clear-history-button:hover {
+    background-color: #FF4500;
+}

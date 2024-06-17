@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-window">
+            <div class="header">
+                <img src="profile-pic.png" alt="Profile" class="profile-icon">
+                <h1>Chat Here</h1>
+            </div>
+            <div class="chat-box">
+                <div class="messages"></div>
+                <div id="typing-indicator" class="typing-indicator">Bujji is typing...</div>
+                <div class="input-area">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+            <div class="info-message">Express your feelings. Check important info.</div>
+        </div>
+        <div class="history">
+            <h2>Chat History</h2>
+            <div class="history-messages"></div>
+            <button id="clear-history-button">Clear History</button>
+            <button id="theme-toggle-button">Switch Theme</button>
+        </div>
+    </div>
+    <script src="index-script.js"></script>
+</body>
+</html>
